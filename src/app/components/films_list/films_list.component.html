@@ -1,0 +1,18 @@
+<div class="container films_container">
+    <ul class="films_list">
+        <li class="film_item" *ngFor="let film of films; let key = index" (click)="changeShowcase(key)">
+            <div class="film_holder">
+                <img src="../../assets/img/ep{{film.episode_id}}.jpg">
+
+                <div class="film_info">
+                    <div class="film_episode">Episode {{film.episode_id}}</div>
+                    <div class="film_title">{{film.title}}</div>
+
+                    <div class="film_actions">
+                        <a class="button" routerLink="/film/{{film.id}}">Know more</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,5 @@
+<app-topbar></app-topbar>
+
+<app-showcase [showcase]="showcase" [hasButton]="true"></app-showcase>
+
+<app-films_list [films]="films" (changeShowcaseChild)="changeShowcase($event)"></app-films_list>

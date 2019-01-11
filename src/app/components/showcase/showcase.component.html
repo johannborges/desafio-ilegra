@@ -1,0 +1,13 @@
+<div class="showcase" *ngIf="showcase">
+    <img src="../../assets/img/ep{{showcase.episode_id}}.jpg">
+
+    <div class="movie_info">
+        <div class="episode_title">Episode {{showcase.episode_id}} - {{showcase.title}}</div>
+
+        <div class="episode_description">{{showcase.opening_crawl}}</div>
+
+        <div class="episode_actions" *ngIf="hasButton">
+            <a class="button" routerLink="/film/{{showcase.id}}">Know more</a>
+        </div>
+    </div>
+</div>

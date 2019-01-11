@@ -1,0 +1,18 @@
+$successcolor: #1FBBA6;
+$errorcolor: #F23564;
+
+$darkgrey: #555;
+$lightgrey: #999;
+$lightergrey: #CCC;
+$white: #FFF;
+$black: #000;
+
+$fontname: "Open Sans";
+$iconfont: "Material Icons";
+
+@import url('https://fonts.googleapis.com/css?family=#{$fontname}:400,700');
+@import url('https://fonts.googleapis.com/css?family=#{$iconfont}:400');
+
+
+
+$topbarheight: 70px;

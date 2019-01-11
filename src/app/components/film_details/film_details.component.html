@@ -1,0 +1,19 @@
+<div class="container film_details_container">
+    <div class="film_info">
+        <ul class="film_info_list" *ngIf="film">
+            <li class="film_info_item"><span class="bold">Directed by:</span> {{film.director}}</li>
+            <li class="film_info_item"><span class="bold">Produced by:</span> {{film.producer}}</li>
+            <li class="film_info_item"><span class="bold">Release at:</span> {{film.release_date}}</li>
+        </ul>
+
+        <div class="film_info_title">Characters</div>
+
+        <ul class="film_info_list" *ngIf="film">
+            <li class="film_info_item" *ngFor="let character of film.characters">
+                <div *ngIf="character.name">
+                    <div class="character_name">{{character.name}}</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

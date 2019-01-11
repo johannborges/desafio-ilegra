@@ -1,0 +1,36 @@
+@import '../../app.component.scss';
+
+.film_info{
+    padding-top: 15px;
+
+    .film_info_title{
+        padding-top: 30px;
+
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .film_info_list{
+        padding-top: 15px;
+
+        &:last-of-type{
+            padding-bottom: 30px;
+        }
+
+        .film_info_item{
+            line-height: 160%;
+
+            .character_name{
+                line-height: 160%;
+            }
+        }
+    }
+}
+
+@media(max-width: 900px){
+    .film_details_container{
+        width: 100%;
+        padding: 0 30px;
+    }
+}
